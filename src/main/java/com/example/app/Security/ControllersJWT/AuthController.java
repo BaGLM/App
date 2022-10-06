@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 
 import javax.validation.Valid;
 
-
 import com.example.app.Security.ModelsJWT.ERole;
 import com.example.app.Security.ModelsJWT.Role;
 import com.example.app.Security.ModelsJWT.User;
