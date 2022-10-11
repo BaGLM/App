@@ -12,6 +12,12 @@ public class TestController {
         return "Public Content";
     }
 
+    @GetMapping("/validation")
+    @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+    public String isAlive() {
+        return "Token validated";
+    }
+
     @GetMapping("/user")
     @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
     public String userAccess() {
